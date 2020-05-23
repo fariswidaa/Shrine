@@ -16,6 +16,7 @@ import 'product.dart';
 
 class ProductsRepository {
   static List<Product> loadProducts(Category category) {
+
     const allProducts = <Product> [
       Product(
         category: Category.accessories,
@@ -284,6 +285,7 @@ class ProductsRepository {
         price: 58,
       ),
     ];
+    
     if (category == Category.all) {
       return allProducts;
     } else {
